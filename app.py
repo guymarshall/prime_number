@@ -1,12 +1,14 @@
 import math
 from numba import jit
 
+
 @jit
 def is_prime_number(number):
     for i in range(2, math.ceil(math.sqrt(number)) + 1):
         if number % i == 0:
             return False
     return True
+
 
 def main():
     user_input = int(input("Enter a positive integer: "))
@@ -19,6 +21,7 @@ def main():
             prime_number_count += 1
             print(f"{prime_number_count}: {number}")
         number += 1
+
 
 if __name__ == "__main__":
     main()
