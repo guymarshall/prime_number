@@ -10,7 +10,6 @@ def is_prime_number(number):
 
 def main():
     user_input = int(input("Enter a positive integer: "))
-    print("Prime numbers:")
 
     prime_number_count = 0
     number = 2
