@@ -1,5 +1,7 @@
 import math
+from numba import jit
 
+@jit
 def is_prime_number(number):
     for i in range(2, math.ceil(math.sqrt(number)) + 1):
         if number % i == 0:
