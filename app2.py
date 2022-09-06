@@ -9,6 +9,7 @@ def generate_list(number):
     
     return numbers
 
+@jit
 def main():
     user_input = int(input("Enter a positive integer: "))
     numbers = generate_list(user_input)
