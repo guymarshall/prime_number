@@ -35,6 +35,12 @@ def generate_list(number):
 def main():
     user_input = int(input("Enter a positive integer: "))
     numbers = generate_list(user_input)
+
+    for number in numbers:
+        for i in numbers:
+            if i != number and i % number == 0:
+                numbers.remove(i)
+    
     print(numbers)
 
 if __name__ == "__main__":
