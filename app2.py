@@ -1,3 +1,6 @@
+from numba import jit
+
+@jit
 def generate_list(number):
     numbers = []
 
