@@ -17,7 +17,7 @@ def main():
     for number in numbers:
         for i in numbers:
             if i != number and i % number == 0:
-                # print(i)
+                print(i)
                 numbers.remove(i)
     
     print(numbers)
