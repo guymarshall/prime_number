@@ -21,6 +21,8 @@ def main():
             prime_number_count += 1
             print(f"{prime_number_count}: {number}")
         number += 1
+    
+    # add primes to matplotlib plot
 
 
 if __name__ == "__main__":
